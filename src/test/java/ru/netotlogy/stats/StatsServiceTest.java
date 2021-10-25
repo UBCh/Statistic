@@ -9,7 +9,7 @@ class StatsServiceTest {
         StatsService service = new StatsService();
         int[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         int expected = 180;
-        int actual = service.CalculateSum(sales);
+        int actual = service.сalculateSum(sales);
         assertEquals(expected, actual);
     }
 

@@ -1,15 +1,16 @@
 package ru.netotlogy.stats;
 
 public class StatsService {
-    public int CalculateSum(int[] sales) {
+    public int сalculateSum(int[] sales) {
         int sum = 0;
         for (int sale : sales) {
-        sum += sale;
+            sum += sale;
         }
         return sum;
     }
+
     public int findAverage(int[] sales) {
-                return CalculateSum(sales)/ sales.length;
+        return сalculateSum(sales) / sales.length;
     }
 
     public int findMax(int[] sales) {
@@ -23,6 +24,7 @@ public class StatsService {
         }
         return max + 1;
     }
+
     public int findMin(int[] sales) {
         int min = 0;
         int month = 0;
@@ -34,8 +36,9 @@ public class StatsService {
         }
         return min + 1;
     }
+
     public int numberBelowAverage(int[] sales) {
-        int average =  CalculateSum(sales)/ sales.length;
+        int average = сalculateSum(sales) / sales.length;
         int month = 0;
         for (int sale : sales) {
             if (sale > average) {
@@ -46,7 +49,7 @@ public class StatsService {
     }
 
     public int numbersAboveAverage(int[] sales) {
-        int average =  CalculateSum(sales)/ sales.length;
+        int average = сalculateSum(sales) / sales.length;
         int month = 0;
         for (int sale : sales) {
             if (sale < average) {
